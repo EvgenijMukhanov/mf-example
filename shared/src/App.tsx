@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Button, Input } from "./ui";
 
 import './index.css'
+import './styles/variable.css'
 
 const App = () => (
   <div className="container" style={{width: '70%'}}>
