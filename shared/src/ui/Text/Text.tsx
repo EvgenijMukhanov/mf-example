@@ -1,8 +1,8 @@
-import React, { FC, HTMLAttributes, ReactNode } from "react";
+import React, { FC, HTMLAttributes } from "react";
 
 import classes from './Text.module.css'
 
-export interface IText extends HTMLAttributes<HTMLParagraphElement> {}
+export interface IText extends HTMLAttributes<HTMLSpanElement> {}
 
 const getClearProps = (props: IText) => {
   if (props) {
@@ -20,6 +20,6 @@ const getClearProps = (props: IText) => {
 
 export const Text:FC<IText> = ({ children, ...props }) => {
   return (
-    <p {...getClearProps(props)}>{ children }</p>
+    <span {...getClearProps(props)}>{ children }</span>
   )
 }
