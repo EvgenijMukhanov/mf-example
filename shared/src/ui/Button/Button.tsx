@@ -13,13 +13,13 @@ const getClearProps = (props: IButton) => {
       _props.className = classes.button
     }
     return _props
-  }else {
+  } else {
     return {}
   }
 }
 
-export const Button:FC<IButton> = ({children, ...props}) => {
+export const Button:FC<IButton> = ({ children, ...props }) => {
   return (
-    <button {...getClearProps(props)}>{children}</button>
+    <button {...getClearProps(props)}>{ children }</button>
   )
 }

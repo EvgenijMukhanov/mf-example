@@ -13,12 +13,12 @@ const getClearProps = (props: IInput) => {
       _props.className = classes.input
     }
     return _props
-  }else {
+  } else {
     return {}
   }
 }
 
-export const Input:FC<IInput> = ({...props}) => {
+export const Input:FC<IInput> = ({ ...props }) => {
   return (
     <input {...getClearProps(props)}/>
   )

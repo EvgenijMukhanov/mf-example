@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button, Input } from "./ui";
+import { Button, Input, Text } from "./ui";
 
 import './index.css'
 import './styles/variable.css'
@@ -13,6 +13,7 @@ const App = () => (
     <div>CSS: Empty CSS</div>
     <Button>Button</Button>
     <Input />
+    <Text>Text</Text>
   </div>
 );
 
