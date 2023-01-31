@@ -1,8 +1,10 @@
-import React, {FC, InputHTMLAttributes } from "react";
+import React, { FC, InputHTMLAttributes } from "react";
 
 import classes from './Input.module.css'
 
-const getClearProps = (props) => {
+export interface IInput extends InputHTMLAttributes<HTMLInputElement>{}
+
+const getClearProps = (props: IInput) => {
   if (props) {
     let _props = {...props}
     if (_props.className) {
@@ -15,8 +17,6 @@ const getClearProps = (props) => {
     return {}
   }
 }
-
-export interface IInput extends InputHTMLAttributes<HTMLInputElement>{}
 
 export const Input:FC<IInput> = ({...props}) => {
   return (

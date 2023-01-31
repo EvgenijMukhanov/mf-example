@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import './shared-decl.d'
+
 import { Button, Input } from 'shared/ui'
 import { Component } from './Component'
 
 import './index.css'
-
 
 const App = () => (
   <div className="container">
@@ -18,4 +19,6 @@ const App = () => (
     <Component />
   </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+    <App />
+, document.getElementById("app"));

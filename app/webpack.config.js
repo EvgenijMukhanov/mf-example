@@ -44,7 +44,7 @@ module.exports = {
       name: "app",
       filename: "remoteEntry.js",
       remotes: {
-        shared: "shared@http://localhost:5000/remoteEntry.js"
+        shared: "shared@http://localhost:5000/remoteEntry.js",
       },
       exposes: {},
       shared: {
