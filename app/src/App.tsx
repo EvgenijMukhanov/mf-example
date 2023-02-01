@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 
 import { Button, Input } from 'shared/ui'
 import { VerticalLayout } from 'shared/layout'
+import { Header } from 'entities/layout'
 import { Load } from "./hocs";
 
 import './index.css'
@@ -10,9 +11,7 @@ import './index.css'
 const App = () => (
   <Load>
     <VerticalLayout style={{height: '100vh'}}>
-      <header style={{height: '50px'}}>
-      header
-      </header>
+      <Header />
       <div style={{flexGrow: '1'}}>
         <Button>Remote button</Button>
         <Input />

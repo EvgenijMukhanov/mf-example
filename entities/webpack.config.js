@@ -47,7 +47,8 @@ module.exports = {
         shared: "shared@http://localhost:5000/remoteEntry.js",
       },
       exposes: {
-        "./forms": "./src/forms"
+        "./forms": "./src/forms",
+        "./layout": "./src/layout"
       },
       shared: {
         ...deps,

@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import './shared-decl.d'
-import "./index.css";
 import { RowInfo } from "./forms";
+
+import './shared-decl.d'
+
+import './styles/variable.css'
+import "./index.css";
 
 const App = () => (
   <div className="container">
