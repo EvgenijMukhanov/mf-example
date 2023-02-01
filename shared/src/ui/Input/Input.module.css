@@ -4,6 +4,8 @@
   padding: 0 15px;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }

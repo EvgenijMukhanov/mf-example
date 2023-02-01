@@ -7,7 +7,7 @@ export const Component = () => {
   }, [])
 
   const loadTheme = () => {
-    document.documentElement.style.setProperty("--primary", "green");
+    document.documentElement.style.setProperty("--primary-color", "green");
   }
 
   return (

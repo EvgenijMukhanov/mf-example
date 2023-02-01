@@ -46,7 +46,9 @@ module.exports = {
       remotes: {
         shared: "shared@http://localhost:5000/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./forms": "./src/forms"
+      },
       shared: {
         ...deps,
         react: {
