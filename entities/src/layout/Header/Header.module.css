@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background: linear-gradient(to right bottom, var(--primary-color), var(--accent-color));
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white;
+}
+
+.counter {
+  font-size: 18px;
+  color: white;
+}
