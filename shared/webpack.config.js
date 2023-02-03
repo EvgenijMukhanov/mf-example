@@ -48,6 +48,7 @@ module.exports = {
         "./ui": "./src/ui",
         "./layouts": "./src/layouts",
         "./containers": "./src/containers",
+        "./@types": "./src/@types",
       },
       shared: {
         ...deps,
