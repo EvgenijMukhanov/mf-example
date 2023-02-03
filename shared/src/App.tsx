@@ -1,20 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Button, Input, Text } from "./ui";
+import { Container } from './containers/index'
 
 import './index.css'
 import './styles/variable.css'
 
 const App = () => (
-  <div className="container" style={{width: '70%'}}>
-    <div>Name: shared</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
+  <Container>
     <Button>Button</Button>
-    <Input />
-    <Text>Text</Text>
-  </div>
+    <Input/>
+    <Text title="Text">Text</Text>
+  </Container>
 );
 
 ReactDOM.render(<App />, document.getElementById("app"));

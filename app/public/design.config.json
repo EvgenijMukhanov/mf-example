@@ -1,4 +1,6 @@
 {
   "primary-color": "blue",
-  "accent-color": "red"
+  "accent-color": "red",
+  "container-width": "90%",
+  "container-max-width": "1200px"
 }

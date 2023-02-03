@@ -48,7 +48,7 @@ module.exports = {
       },
       exposes: {
         "./forms": "./src/forms",
-        "./layout": "./src/layout"
+        "./layouts": "./src/layouts"
       },
       shared: {
         ...deps,

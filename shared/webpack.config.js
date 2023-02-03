@@ -46,7 +46,8 @@ module.exports = {
       remotes: {},
       exposes: {
         "./ui": "./src/ui",
-        "./layout": "./src/layout",
+        "./layouts": "./src/layouts",
+        "./containers": "./src/containers",
       },
       shared: {
         ...deps,

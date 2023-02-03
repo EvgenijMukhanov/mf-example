@@ -1,8 +1,9 @@
-import React, { FC, InputHTMLAttributes } from "react";
+import React, { AriaAttributes, DetailedHTMLProps, FC, InputHTMLAttributes } from "react";
 
 import classes from './Input.module.css'
 
-export interface IInput extends InputHTMLAttributes<HTMLInputElement>{}
+interface IInput extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
+  AriaAttributes{}
 
 const getClearProps = (props: IInput) => {
   if (props) {

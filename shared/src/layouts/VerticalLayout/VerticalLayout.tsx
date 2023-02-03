@@ -1,8 +1,9 @@
-import React, { FC, InputHTMLAttributes } from 'react'
+import React, { AriaAttributes, DetailedHTMLProps, FC, InputHTMLAttributes } from 'react'
 
 import classes from './VerticalLayout.module.css'
 
-interface IVerticalLayout extends InputHTMLAttributes<HTMLDivElement>{}
+interface IVerticalLayout extends DetailedHTMLProps<InputHTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+  AriaAttributes{}
 
 export const VerticalLayout: FC<IVerticalLayout> = ({ children, ...props }) => {
 

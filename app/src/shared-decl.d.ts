@@ -1,2 +1,2 @@
 declare module "shared/ui"
-declare module "shared/layout"
+declare module "shared/layouts"

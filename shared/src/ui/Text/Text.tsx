@@ -1,8 +1,9 @@
-import React, { FC, HTMLAttributes } from "react";
+import React, { AriaAttributes, DetailedHTMLProps, FC, HTMLAttributes, InputHTMLAttributes } from "react";
 
 import classes from './Text.module.css'
 
-export interface IText extends HTMLAttributes<HTMLSpanElement> {}
+interface IText extends DetailedHTMLProps<InputHTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
+  AriaAttributes{}
 
 const getClearProps = (props: IText) => {
   if (props) {
