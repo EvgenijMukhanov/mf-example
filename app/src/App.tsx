@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import { BrowserRouter } from 'react-router-dom'
 
 import { Button, Input } from 'shared/ui'
 import { VerticalLayout } from 'shared/layouts'
@@ -22,5 +23,7 @@ const App = () => (
   
 );
 ReactDOM.render(
+  <BrowserRouter>
     <App />
+  </BrowserRouter>
 , document.getElementById("app"));
