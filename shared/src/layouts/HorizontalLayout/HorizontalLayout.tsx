@@ -1,13 +1,13 @@
 import React, { AriaAttributes, DetailedHTMLProps, FC, InputHTMLAttributes } from 'react'
 
-import classes from './HeaderSidebarLayout.module.css'
+import classes from './VerticalLayout.module.css'
 
-interface IHeaderSidebarLayout extends DetailedHTMLProps<InputHTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+interface IHorizontalLayout extends DetailedHTMLProps<InputHTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   AriaAttributes{}
 
-export const HeaderSidebarLayout: FC<IHeaderSidebarLayout> = ({ children, ...props }) => {
+export const HorizontalLayout: FC<IHorizontalLayout> = ({ children, ...props }) => {
 
-  const getClearProps = (props: IHeaderSidebarLayout) => {
+  const getClearProps = (props: IHorizontalLayout) => {
     if (props) {
       let _props = {...props}
       if (_props.className) {
