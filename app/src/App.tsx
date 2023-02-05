@@ -3,20 +3,25 @@ import ReactDOM from "react-dom"
 import { BrowserRouter } from 'react-router-dom'
 
 import { Button, Input } from 'shared/ui'
-import { VerticalLayout } from 'shared/layouts'
+import { VerticalLayout, HorizontalLayout } from 'shared/layouts'
 import { Header } from 'entities/layouts'
 import { Load } from "./hocs";
 
 import './index.css'
+import { Sidebar } from "./widgets"
 
 const App = () => (
   <Load>
     <VerticalLayout style={{height: '100vh'}}>
       <Header />
-      <div style={{flexGrow: '1'}}>
-        <Button>Remote button</Button>
-        <Input />
-      </div>
+      <HorizontalLayout style={{flexGrow: '1'}}>
+        <Sidebar>
+          Sidebar
+        </Sidebar>
+        <div style={{flexGrow: '1'}}>
+          Content
+        </div>
+      </HorizontalLayout>
       
     </VerticalLayout>
   </Load>

@@ -1,6 +1,6 @@
 import React, { AriaAttributes, DetailedHTMLProps, FC, InputHTMLAttributes } from 'react'
 
-import classes from './VerticalLayout.module.css'
+import classes from './HorizontalLayout.module.css'
 
 interface IHorizontalLayout extends DetailedHTMLProps<InputHTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   AriaAttributes{}
