@@ -1,0 +1,22 @@
+.menu {
+  height: 42px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.link {
+  color: #0059B2;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 2px solid #0059B2;
+}

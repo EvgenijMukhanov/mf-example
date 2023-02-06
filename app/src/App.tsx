@@ -8,7 +8,7 @@ import { Header } from 'entities/layouts'
 import { Load } from "./hocs";
 
 import './index.css'
-import { Sidebar } from "./widgets"
+import { Nav, Sidebar } from "./widgets"
 
 const App = () => (
   <Load>
@@ -16,7 +16,7 @@ const App = () => (
       <Header />
       <HorizontalLayout style={{flexGrow: '1'}}>
         <Sidebar>
-          Sidebar
+          <Nav />
         </Sidebar>
         <div style={{flexGrow: '1'}}>
           Content
