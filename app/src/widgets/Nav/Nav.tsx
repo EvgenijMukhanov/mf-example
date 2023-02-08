@@ -27,12 +27,12 @@ export const Nav: FC<INav> = ({ children, ...props }) => {
       <ul className={classes.list}>
         <li className={classes.item}>
           <NavLink to='/' className={({isActive}) => isActive ? `${classes.link} ${classes.active}` : classes.link}>
-            Host Page
+            Main page
           </NavLink>
         </li>
         <li className={classes.item}>
-          <NavLink to='/resourses' className={({isActive}) => isActive ? `${classes.link} ${classes.active}` : classes.link}>
-            MF Page
+          <NavLink to='/details' className={({isActive}) => isActive ? `${classes.link} ${classes.active}` : classes.link}>
+            Details page
           </NavLink>
         </li>
       </ul>

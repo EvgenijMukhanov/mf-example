@@ -18,9 +18,10 @@ const App = () => (
         <Sidebar>
           <Nav />
         </Sidebar>
-        <div style={{flexGrow: '1'}}>
+        <div style={{flexGrow: '1', padding: '15px'}}>
           <Routes>
             <Route path="/" element={<MainPage />}/>
+            <Route path="/details" element={<MainPage />}/>
           </Routes>
         </div>
       </HorizontalLayout>
