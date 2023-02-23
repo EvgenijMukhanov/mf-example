@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 150px;
+  width: calc(100vw - 300px);
   height: 100%;
-  padding: 55px 110px 0px 110px;
 }
